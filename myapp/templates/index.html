@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    {% load static %}
+    <section class="bg-gray-100 min-h-screen flex items-center justify-center">
+      <div class="bg-slate-200 flex rounded-2xl shadow-xl max-w-3xl p-5">
+        <div class="sm:w-1/2 rounded-2xl px-16">
+          <h2 class="font-bold">Login</h2>
+          <p>ingrese su usuario y contraseña</p>
+          <form method="POST" class="flex flex-col gap-4">
+            <input
+              class="p-2 rounded-2xl mt-10 justify-center text-center focus:outline-none text-slate-400"
+              type="text"
+              placeholder="Usuario"
+            />
+            <input
+              class="p-2 rounded-2xl justify-center text-center"
+              type="password"
+              placeholder="Contraseña"
+            />
+            <button class="bg-sky-600 p-2 text-white shadow-xl rounded-2xl">
+              Acceder
+            </button>
+          </form>
+        </div>
+        <div class="sm:block hidden w-1/2">
+          <img
+            class="rounded-2xl shadow-xl"
+            src="{% static 'img/arcor.webp' %}"
+          />
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
